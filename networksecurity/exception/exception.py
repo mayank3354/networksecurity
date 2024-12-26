@@ -11,5 +11,7 @@ class NetworkSecurityException(Exception):
 
 
     def __str__(self):
-        return f"Error: {self.error_message} at line number {self.lineno} in file {self.file_name}"
-        
+        return "Error occured in python script name [{0}] line number [{1}] error message [{2}]".format(
+               self.file_name, self.lineno, str(self.error_message) 
+        )
+            
