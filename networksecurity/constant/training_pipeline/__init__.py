@@ -18,6 +18,8 @@ TEST_FILE_NAME: str = "test.csv"
 
 SCHEMA_FILE_PATH = os.path.join("data_schema","schema.yaml")
 
+SAVED_MODEL_DIR = os.path.join("saved_model")
+MODEL_FILE_NAME = "model.pkl"
 
 
 """
@@ -54,3 +56,13 @@ DATA_TRANSFFORMATION_IMPUTER_PARAMS: dict = {
     "n_neighbors": 3,
     "weights": "uniform",
 }
+
+"""
+Model Trainer related constant start with MODEL TRAINER VAR NAME
+"""
+
+MODEL_TRAINER_DIR_NAME = "model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
+MODEL_TRAINER_TRAINED_MODEL_NAME:  str = "model.pkl"
+MODEL_TRAINER_EXPECTED_SCORE_FILE: str = 0.6
+MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD: str = 0.05

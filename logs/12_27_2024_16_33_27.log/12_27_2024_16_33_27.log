@@ -1,0 +1,21 @@
+[2024-12-27 16:34:01,290] 22  root - INFO - Initiate the data ingestion
+[2024-12-27 16:34:14,652] 68  root - INFO - Performed train test split on the dataframe
+[2024-12-27 16:34:14,652] 70  root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2024-12-27 16:34:14,676] 75  root - INFO - Exporting train and test file path
+[2024-12-27 16:34:14,918] 81  root - INFO - Exported train and test file path
+[2024-12-27 16:34:14,919] 24  root - INFO - data Initiation completed
+[2024-12-27 16:34:14,968] 27  root - INFO - Initiate data validation
+[2024-12-27 16:34:15,506] 32  root - INFO - Required NumberOfColumns: 31
+[2024-12-27 16:34:15,506] 33  root - INFO - Data Frame has Column: 31
+[2024-12-27 16:34:15,507] 32  root - INFO - Required NumberOfColumns: 31
+[2024-12-27 16:34:15,507] 33  root - INFO - Data Frame has Column: 31
+[2024-12-27 16:34:15,863] 29  root - INFO - Data validation Completed
+[2024-12-27 16:34:15,863] 31  root - INFO - Data transformation started
+[2024-12-27 16:34:15,863] 51  root - INFO - Entered initiate_data_transformation
+[2024-12-27 16:34:15,864] 53  root - INFO - Starting data transformation
+[2024-12-27 16:34:15,905] 40  root - INFO - Entered get_data_transformer_object method of transformation class
+[2024-12-27 16:34:15,905] 43  root - INFO - Initialise KNNImputer with {DATA_TRANSFORMATION_IMPUTER_PARAMS}
+[2024-12-27 16:34:15,927] 41  root - INFO - Entered the save object method of main utils class
+[2024-12-27 16:34:16,003] 45  root - INFO - Exited the save_object method of main utils class
+[2024-12-27 16:34:16,004] 34  root - INFO - Data transformation completed successfully
+[2024-12-27 16:34:16,006] 38  root - INFO - Model Training Started
