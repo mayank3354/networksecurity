@@ -5,6 +5,7 @@ numpy
 pymongo
 certifi
 scikit-learn
-dill
+#dill
+mlflow
 pyaml
 #-e .
