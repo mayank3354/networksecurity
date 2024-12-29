@@ -23,7 +23,7 @@ jobs:
         run: echo "Running unit tests"
         
   build-and-push-ecr-image:
-    nae: Continious delivery
+    name: Continious delivery
     needs: integration
     runs-on: ubuntu-latest
     steps:
