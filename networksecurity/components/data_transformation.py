@@ -40,7 +40,7 @@ class DataTransformation:
         logging.info("Entered get_data_transformer_object method of transformation class")
         try:
             imputer:KNNImputer=KNNImputer(**DATA_TRANSFFORMATION_IMPUTER_PARAMS)
-            logging.info("Initialise KNNImputer with {DATA_TRANSFFORMATION_IMPUTER_PARAMS}")
+            logging.info(f"Initialise KNNImputer with {DATA_TRANSFFORMATION_IMPUTER_PARAMS}")
             processor:Pipeline=Pipeline([("imputer",imputer)])
             return processor
                                         
