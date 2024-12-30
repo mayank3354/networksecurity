@@ -79,17 +79,17 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
 
       - name: Pull latest images
-          run: |
-            IMAGE="${{ secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest"
-            echo "Pulling image: $IMAGE"
+        run: |
+          IMAGE="${{ secrets.AWS_ECR_LOGIN_URI }}/${{ secrets.ECR_REPOSITORY_NAME }}:latest"
+          echo "Pulling image: $IMAGE"
     
-          # Validate the image reference
-            if [[ -z "$IMAGE" ]]; then
-              echo "Image reference is empty. Please check your secrets."
-              exit 1
-            fi
+        # Validate the image reference
+          if [[ -z "$IMAGE" ]]; then
+            echo "Image reference is empty. Please check your secrets."
+            exit 1
+          fi
     
-            docker pull $IMAGE
+          docker pull $IMAGE
 
 
         # - name: Stop and remove container if running
